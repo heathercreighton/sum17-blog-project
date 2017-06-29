@@ -16,3 +16,38 @@
 
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
+
+ body {
+ 			background: beige;
+ }
+
+.panel-default .panel-heading {
+	background-color: #446077;
+	color: white;
+}
+
+
+.btn:visited { 
+	color: white;
+}
+
+
+#comments .well {
+	background: #ccc6ab;
+
+}
+.well  {
+	background: #446077;
+	color: white;
+
+}
+
+.container .post{
+	text-align:center;
+	margin-top: 45px
+
+}
+
+.index, #post_title {
+	font-family: 'Berkshire Swash', cursive;
+}
