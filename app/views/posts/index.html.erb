@@ -11,10 +11,10 @@
      <!-- <div class="col-md-4">  -->
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title"><%= post.title %></h3>
+          <h3 class="panel-title"><%= post.title.html_safe %></h3>
         </div>  
         <div class="panel-body">   
-          <p>By <em><%= post.user.username %></em></p>
+          <p>By <em><%= post.user.username %> <%= image_tag post.user.avatar.thumb %></em></p>
        
           <p><%= post.blog_entry.html_safe %></p>
           <p><%= link_to 'Show Comments', post, class: "btn btn-primary" %> |

@@ -3,13 +3,13 @@
 	<div class="container">
 		<div class="well post">
 			
-			 <h2><%= @post.title %></h2>
+			 <h2><%= @post.title.html_safe %></h2>
 			
-			  <h4>By <%= @post.user.username %></h4>
+			  <h4>By <%= @post.user.username %> <%= image_tag @post.user.avatar.thumb %></h4>
 			<br>
 			<br>
 			<p>
-			  <%= @post.blog_entry %>
+			  <%= @post.blog_entry.html_safe %>
 			</p>
 		</div>
 	</div>			

@@ -20,6 +20,9 @@ gem 'jquery-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
+gem 'kaminari'
+gem "carrierwave","~>1.0"
+gem "mini_magick"
 # gem 'therubyracer', platforms: :ruby
 gem "devise"
 # Use CoffeeScript for .coffee assets and views
